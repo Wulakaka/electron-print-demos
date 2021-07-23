@@ -1,0 +1,20 @@
+{
+  "name": "v7",
+  "version": "1.0.0",
+  "description": "electron print demo",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --config=electron.builder.config.js",
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "weifeng.zhang",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^7.0.0",
+    "electron-builder": "^22.10.5"
+  }
+}
