@@ -1,6 +1,6 @@
 {
   "name": "v6",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "electron print demo",
   "main": "main.js",
   "scripts": {
@@ -12,7 +12,10 @@
   },
   "author": "weifeng.zhang",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "electron-log": "^4.4.1",
+    "electron-updater": "^4.3.9"
+  },
   "devDependencies": {
     "electron": "^6.0.0",
     "electron-builder": "^22.10.5"

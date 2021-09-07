@@ -13,4 +13,10 @@ window.addEventListener('DOMContentLoaded', () => {
     printBtn.addEventListener('click', () => {
         ipcRenderer.send('print')
     })
+
+    const textarea = document.getElementById('textarea')
+    ipcRenderer.on('message', (e, text) => {
+        console.log(text)
+        textarea.value += text
+    })
 })
